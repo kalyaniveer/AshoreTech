@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.LandingActivity">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_layer"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/toolbarLayout"
+                layout="@layout/toolbar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_95"
+                android:layout_marginStart="@dimen/margin_35"
+                android:layout_marginTop="@dimen/margin_95"
+                android:layout_marginEnd="@dimen/margin_35"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_40"
+                android:layout_marginEnd="@dimen/margin_40"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtwelcome"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:gravity="center"
+                    android:text="SIGN UP WITH SOCIAL MEDIA"
+                    android:textAllCaps="true"
+                    android:textColor="#3247AA"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtother"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:layout_marginBottom="@dimen/margin_25"
+                    android:gravity="center"
+                    android:text="Choose your option to continue!"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+
+                <RelativeLayout
+                    android:id="@+id/facebook_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_10">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:background="@drawable/button_round_blue"
+                        android:paddingStart="55dp"
+                        android:text="SIGN UP WITH FACEBOOK"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:textAllCaps="true" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/margin_35"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="-46dp"
+                        android:background="@drawable/white_roud"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_facebook" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/google_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginEnd="@dimen/margin_10">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/light_gray_roud"
+                        android:paddingStart="55dp"
+                        android:text="SIGN UP WITH GOOGLE"
+                        android:textAllCaps="true"
+                        android:textColor="@color/arsenic"
+                        android:textStyle="bold"
+                        app:textAllCaps="true" />
+
+                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/margin_35"
+                        android:layout_height="@dimen/margin_35"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="-46dp"
+                        android:background="@drawable/white_roud"
+                        android:gravity="right"
+                        android:src="@drawable/ic_google_svg" />
+                </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/yelp_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginEnd="@dimen/margin_10">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/light_gray_roud"
+                            android:paddingStart="55dp"
+                            android:text="SIGN UP WITH YELP"
+                            android:textAllCaps="true"
+                            android:textColor="@color/arsenic"
+                            android:textStyle="bold"
+                            app:textAllCaps="true" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/margin_35"
+                            android:layout_height="@dimen/margin_35"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="-46dp"
+                            android:background="@drawable/white_roud"
+                            android:gravity="right"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_yelp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_email_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_50"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginEnd="@dimen/margin_10">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/light_gray_roud"
+                            android:paddingStart="55dp"
+                            android:text="SIGN UP WITH EMAIL"
+                            android:textAllCaps="true"
+                            android:textColor="@color/arsenic"
+                            android:textStyle="bold"
+                            app:textAllCaps="true" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/margin_35"
+                            android:layout_height="@dimen/margin_35"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="-46dp"
+                            android:background="@drawable/white_roud"
+                            android:gravity="right"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_black_back_closed_envelope_shape__1_" />
+                    </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewdateLine"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_marginBottom="24dp"
+                android:background="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

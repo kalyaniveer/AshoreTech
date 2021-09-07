@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_95">95</dimen>
+    <dimen name="margin_35">35</dimen>
+    <dimen name="margin_40">40</dimen>
+    <dimen name="margin_15">15</dimen>
+    <dimen name="margin_20">20</dimen>
+    <dimen name="margin_30">30</dimen>
+    <dimen name="margin_10">10</dimen>
+    <dimen name="margin_25">25</dimen>
+    <dimen name="margin_50">50</dimen>
+</resources>

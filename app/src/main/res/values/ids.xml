@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnFacebook" type="id">10</item>
+    <item name="createnewAccount" type="id">20</item>
+    <item name="logout" type="id">10</item>
+</resources>
